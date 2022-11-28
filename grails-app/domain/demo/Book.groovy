@@ -6,5 +6,9 @@ import grails.compiler.GrailsCompileStatic
 class Book {
     String title
     String author
-}
 
+    @Override
+    String toString() {
+        "Book(author='${author}', title='${title}')"
+    }
+}
